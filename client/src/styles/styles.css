@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@1,700&family=Roboto+Condensed:wght@300&display=swap");
+
+#root {
+  background-color: #252424;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  color: #FAEDCD;
+  background-color: #344E41;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.resume{
+  margin: 1rem;
+}
+
+.projectHeader{
+  margin: 1rem;
+}
+
+.profilePic {
+  border-radius: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #344E41;
+  background-color: #FAEDCD;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #252424;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background-color: cornsilk;
+}
+
+.button:active {
+  background-color: #252424;
+  box-shadow: 0 5px #252424;
+  transform: translateY(4px);
+}
+
+.icon:active{
+  background-color: cornsilk;
+}
+
+.icon:hover{
+  /* background-color: #252424; */
+    /* box-shadow: 0 5px #252424; */
+    transform: translateY(2px);
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.navLinks{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FAEDCD;
+  padding: .25rem .5rem;
+  margin: .25rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    margin: 0.25rem;
+    padding: 0.5rem;
+  }
+  .image {
+    margin: 0.25rem;
+    height: 0.25rem;
+    margin-top: 0rem;
+  }
+  .navbar {
+    display: flex;
+  }
+
+  .navLinks {
+    padding-right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .center {
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "port-foliage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm run start",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andypieratt/port-foliage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andypieratt/port-foliage/issues"
+  },
+  "homepage": "https://github.com/andypieratt/port-foliage#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
