@@ -1,26 +1,31 @@
 {
   "name": "port-foliage",
   "version": "1.0.0",
+  "homepage": "https://andypieratt.github.io/portfolio",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "cd client && npm run start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andypieratt/port-foliage.git"
+    "url": "git+https://github.com/andypieratt/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andypieratt/port-foliage/issues"
+    "url": "https://github.com/andypieratt/portfolio/issues"
   },
-  "homepage": "https://github.com/andypieratt/port-foliage#readme",
   "dependencies": {
     "concurrently": "^7.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
